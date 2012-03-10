@@ -20,3 +20,4 @@ isEqual(o1,o2,{noReverse:true}); //true
 isEqual(o1,o2,{noReverse:true,strictMode:true}); //false - 2 doesn't match "2"  
 isEqual(o1,o2,{exclude:{"c":true}}); //true  
 
+for more information you can check the [related blog post](http://www.amirharel.com/2012/03/10/comparing-javascript-objects/). 
