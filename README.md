@@ -14,6 +14,9 @@
 
 ###Examples
 var o1 = {a:1,b:2};   
-var o2 = {a:1,b:"2",c:3};
-isEqual(o1,o2); //
+var o2 = {a:1,b:"2",c:3};  
+isEqual(o1,o2); //false - c is not in o1  
+isEqual(o1,o2,{noReverse:true}); //true  
+isEqual(o1,o2,{noReverse:true,strictMode:true}); //false - 2 doesn't match "2"  
+isEqual(o1,o2,{exclude:{"c":true}}); //true  
 
