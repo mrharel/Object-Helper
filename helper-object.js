@@ -23,7 +23,7 @@ function isEqual(o1,o2,cfg,reverse){
 	cfg.exclude = cfg.exclude || {};	
 	
 	//first we check the reference. we don't care if null== undefined        
-	if( cfg.strictMode ){
+	if (cfg.strictMode) {
 		if( o1 === o2 ) return true;            
 	}
 	else{
